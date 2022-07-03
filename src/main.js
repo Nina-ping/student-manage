@@ -7,6 +7,7 @@ import 'vant/lib/index.css';
 import '@/assets/less/common.less';
 import "@/assets/iconfont/iconfont.css";
 
+console.log("当前是dev分支");
 
 Vue.use(Vant);
 
