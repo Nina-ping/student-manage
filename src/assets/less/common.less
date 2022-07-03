@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*取消高亮*/
+	-webkit-tap-highlight-color: transparent;
+	/*禁止缩放字体*/
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	font-family: "微软雅黑";
+}
+
+body {
+	/*兼容ios11之前的 苹果手机安全区域问题解决*/
+	padding-bottom: constant(safe-area-inset-bottom);
+	/*兼容ios11之后的 苹果手机安全区域问题解决*/
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*取消input默认*/
+input,
+button {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+/*1像素解决方法伪元素*/
+.px1 {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: #ddd;
+		transform: scaleY(0.5);
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

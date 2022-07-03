@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 最后两个是移动端 禁止用户缩放和ios安全区域问题解决方案 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<!-- pc端，移动端都需要，seo优化 -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- 移动端h5页面 手机号码不被显示为拨号链接 针对ios-->
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+	<noscript>
+		<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+			Please enable it to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+
+	<!-- built files will be auto injected -->
+</body>
+
 </html>

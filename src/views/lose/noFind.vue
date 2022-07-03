@@ -1,6 +1,6 @@
 <template>
-	<div class="app-container">
-		<router-view></router-view>
+	<div class="nofind-container">
+		<h3>这是404页面</h3>
 	</div>
 </template>
 

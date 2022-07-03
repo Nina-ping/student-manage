@@ -1,6 +1,6 @@
 <template>
-	<div class="app-container">
-		<router-view></router-view>
+	<div class="forget-container">
+		<h3>忘记密码页面</h3>
 	</div>
 </template>
 
